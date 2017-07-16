@@ -1,0 +1,57 @@
+<?xml version="1.0"?> 
+<layout>
+	<default>        
+    	<reference name="head">
+				<action method="addJs">
+                        <script>festivalbackgroundimage/jquery-3.1.1.min.js</script><!--this is optional file // if not working then add this -->
+                </action>
+                <action method="addJs">
+                        <script>jscolor/jscolor.js</script>
+                </action>
+                <action method="addJs">
+                        <script>festivalbackgroundimage/jquery.fancybox.pack.js</script>
+                </action>
+                <action method="addJs">
+                        <script>festivalbackgroundimage/showimg.js</script>
+                </action>
+                <action method="addJs">
+                	<script>scriptaculous/effects.js</script>
+                </action>
+                <action method="addCss">
+                        <stylesheet>festivalbackgroundimage/style.css</stylesheet>
+                </action>
+        </reference>      
+    </default>
+    <adminhtml_festivalbackgroundimage_festivalbackground_index>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>vijay_festivalbackgroundimage/festivalbackground</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="vijay_festivalbackgroundimage/adminhtml_festivalbackground" name="festivalbackground" />
+
+        </reference>
+    </adminhtml_festivalbackgroundimage_festivalbackground_index>
+    <adminhtml_festivalbackgroundimage_festivalbackground_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="vijay_festivalbackgroundimage/adminhtml_festivalbackground_grid" name="festivalbackground_grid"/>
+        </block>
+    </adminhtml_festivalbackgroundimage_festivalbackground_grid>
+    <!-- Festivalbackground add/edit action -->
+    <adminhtml_festivalbackgroundimage_festivalbackground_edit>
+        <update handle="editor"/>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>vijay_festivalbackgroundimage/festivalbackground</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="vijay_festivalbackgroundimage/adminhtml_festivalbackground_edit" name="festivalbackground_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="vijay_festivalbackgroundimage/adminhtml_festivalbackground_edit_tabs" name="festivalbackground_tabs"></block>
+        </reference>
+    </adminhtml_festivalbackgroundimage_festivalbackground_edit>
+
+</layout>

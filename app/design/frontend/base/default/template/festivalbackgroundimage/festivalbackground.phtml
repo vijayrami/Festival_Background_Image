@@ -1,0 +1,66 @@
+<?php if (Mage::getStoreConfigFlag('vijay_festivalbackgroundimage/general/is_enabled') == true ) :?>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(
+function(jQuery) 
+{      
+ 	changeBG();
+});
+
+function changeBG()
+{
+ <?php 
+        $today = date("Y-m-d");
+        $collection = Mage::getModel('vijay_festivalbackgroundimage/festivalbackground')->getCollection()
+        ->addFieldToFilter("status",1)
+        ->addFieldToFilter("startdate",array('lteq'=> $today))
+        ->addFieldToFilter("enddate",array('gteq'=> $today));
+        
+foreach($collection as $background)
+	{
+		   $bg=$background->getBackground();
+	       $type=$background->getType();
+		   $backgroundtarget=$background->getBackgroundTarget();
+		   $backgroundcustomtarget=$background->getBackgroundCustomTarget();
+		   $startdate=$background->getStartdate();
+		   $enddate=$background->getEnddate();
+		   $startdate  = date('Y-m-d',strtotime($startdate));
+		   $enddate  = date('Y-m-d',strtotime($enddate));
+		                    
+             if(($startdate<=$today) && ($enddate>=$today))
+		   {
+				if($type==1)
+				{
+					$imageUrl=Mage::getBaseUrl('media').'festivalbackgroundimage/'.$bg;
+				
+				if ($backgroundtarget == 'custom') { ?>
+					jQuery("<?php echo $backgroundcustomtarget; ?>").css("background", "url('<?php echo $imageUrl; ?>') no-repeat");
+				<?php } else { ?>
+					jQuery("<?php echo $backgroundtarget; ?>").css("background", "url('<?php echo $imageUrl; ?>') no-repeat");
+				<?php } ?>
+				 
+				 jQuery(".footer-container").css("border-top-color", "transparent");
+				 
+	
+				<?php
+				}
+				else
+				{
+				
+					if ($backgroundtarget == 'custom') { ?>
+					jQuery("<?php echo $backgroundcustomtarget; ?>").css("background-color", "<?php echo $bg; ?>");
+				<?php } else { ?>
+					jQuery("<?php echo $backgroundtarget; ?>").css("background-color", "<?php echo $bg; ?>");
+				<?php } ?> 
+					jQuery(".footer-container").css("border-top-color", "transparent");
+				
+				<?php   	
+			   	}
+	         }    
+	 } 
+	    
+?>
+
+}
+</script>
+<?php endif;?>

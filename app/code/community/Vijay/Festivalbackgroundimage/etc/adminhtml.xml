@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <vijay_festivalbackgroundimage translate="title" module="vijay_festivalbackgroundimage">
+                                        <title>Festivalbackgroundimage</title>
+                                    </vijay_festivalbackgroundimage>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <vijay_festivalbackgroundimage translate="title" module="vijay_festivalbackgroundimage">
+                        <title>Festival Background</title>
+                        <children>
+                            <festivalbackground translate="title" module="vijay_festivalbackgroundimage">
+                                <title>Festivalbackground</title>
+                                <sort_order>0</sort_order>
+                            </festivalbackground>
+                        </children>
+                    </vijay_festivalbackgroundimage>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <vijay_festivalbackgroundimage translate="title" module="vijay_festivalbackgroundimage">
+            <title>Festival Background</title>
+            <sort_order>75</sort_order>
+            <children>
+                <festivalbackground translate="title" module="vijay_festivalbackgroundimage">
+                    <title>Festivalbackground</title>
+                    <action>adminhtml/festivalbackgroundimage_festivalbackground</action>
+                    <sort_order>0</sort_order>
+                </festivalbackground>
+            </children>
+        </vijay_festivalbackgroundimage>
+    </menu>
+</config>

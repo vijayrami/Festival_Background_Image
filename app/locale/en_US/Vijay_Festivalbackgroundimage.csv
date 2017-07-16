@@ -1,0 +1,57 @@
+Action,Action
+Add Festivalbackground,Add Festivalbackground
+An error occurred while updating the festivalbackgrounds.,An error occurred while updating the festivalbackgrounds.
+Are you sure?,Are you sure?
+Background Type,Background Type
+CSV,CSV
+Change status,Change status
+Could not find festivalbackground to delete.,Could not find festivalbackground to delete.
+Created at,Created at
+Delete Festivalbackground,Delete Festivalbackground
+Delete,Delete
+Disabled,Disabled
+Edit Festivalbackground '%s',Edit Festivalbackground '%s'
+Edit,Edit
+Enabled,Enabled
+Enter Festival End Date Here,Enter Festival End Date Here
+Enter Festival Name Here,Enter Festival Name Here
+Enter Festival Start Date Here,Enter Festival Start Date Here
+Error saving festivalbackground,Error saving festivalbackground
+Excel,Excel
+Festival End Date,Festival End Date
+Festival Name,Festival Name
+Festival Start Date,Festival Start Date
+Festivalbackground was saved,Festivalbackground was saved
+Festivalbackground was successfully deleted.,Festivalbackground was successfully deleted.
+Festivalbackground was successfully saved,Festivalbackground was successfully saved
+Festivalbackground,Festivalbackground
+Festivalbackgrounds,Festivalbackgrounds
+Home,Home
+Id,Id
+No,No
+None,None
+Please select festivalbackgrounds to delete.,Please select festivalbackgrounds to delete.
+Please select festivalbackgrounds.,Please select festivalbackgrounds.
+Reset,Reset
+Save And Continue Edit,Save And Continue Edit
+Save Festivalbackground,Save Festivalbackground
+Status,Status
+Store views,Store views
+The festivalbackgrounds has been deleted.,The festivalbackgrounds has been deleted.
+There was a problem saving the festivalbackground.,There was a problem saving the festivalbackground.
+There was an error deleting festivalbackground.,There was an error deleting festivalbackground.
+There was an error deleting festivalbackgrounds.,There was an error deleting festivalbackgrounds.
+There was an error updating festivalbackgrounds.,There was an error updating festivalbackgrounds.
+This festivalbackground no longer exists.,This festivalbackground no longer exists.
+Total of %d festivalbackgrounds were successfully deleted.,Total of %d festivalbackgrounds were successfully deleted.
+Total of %d festivalbackgrounds were successfully updated.,Total of %d festivalbackgrounds were successfully updated.
+Total of %d record(s) have been deleted.,Total of %d record(s) have been deleted.
+Total of %d record(s) have been updated.,Total of %d record(s) have been updated.
+Unable to find festivalbackground to save.,Unable to find festivalbackground to save.
+Updated at,Updated at
+Use Breadcrumbs,Use Breadcrumbs
+WYSIWYG Editor,WYSIWYG Editor
+XML,XML
+Yes,Yes
+background,background
+Background,Background

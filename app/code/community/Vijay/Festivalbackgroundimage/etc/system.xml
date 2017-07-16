@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<festivalbackground translate="label" module="vijay_festivalbackgroundimage">
+			<label>Festival Bacground</label>
+			<sort_order>320</sort_order>
+		</festivalbackground>
+	</tabs>
+	<sections>
+		<vijay_festivalbackgroundimage translate="label" module="vijay_festivalbackgroundimage">
+			<label>Festival Bacground Image / Color</label>
+			<tab>festivalbackground</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>150</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>Festival Bacground Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<is_enabled translate="label">
+							<label>Is Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</is_enabled>
+					</fields>
+				</general>
+				<frontend translate="label">
+					<label>Frontend Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<includejquery translate="label">
+							<label>Include Jquery ?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+							<depends>
+								<is_enabled>
+									<fieldset>general</fieldset>
+									<value>1</value>
+								</is_enabled>
+							</depends>
+						</includejquery>
+					</fields>
+				</frontend>
+			</groups>
+		</vijay_festivalbackgroundimage>
+	</sections>
+</config>
