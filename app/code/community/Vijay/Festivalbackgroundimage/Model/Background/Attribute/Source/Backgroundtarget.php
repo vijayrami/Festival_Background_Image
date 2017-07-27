@@ -36,15 +36,15 @@ class Vijay_Festivalbackgroundimage_Model_Background_Attribute_Source_Background
     {
         $options =  array(
             array(
-                'label' => Mage::helper('vijay_custombackground')->__('Wrapper'),
+                'label' => Mage::helper('vijay_festivalbackgroundimage')->__('Wrapper'),
                 'value' => '.wrapper'
             ),
             array(
-                'label' => Mage::helper('vijay_custombackground')->__('Body'),
+                'label' => Mage::helper('vijay_festivalbackgroundimage')->__('Body'),
                 'value' => 'body'
             ),
             array(
-                'label' => Mage::helper('vijay_custombackground')->__('Custom CSS selector'),
+                'label' => Mage::helper('vijay_festivalbackgroundimage')->__('Custom CSS selector'),
                 'value' => 'custom'
             ),
         );
